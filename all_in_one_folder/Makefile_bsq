@@ -1,0 +1,39 @@
+# **************************************************************************** #
+#                                                                              #
+#                                                         :::      ::::::::    #
+#    Makefile                                           :+:      :+:    :+:    #
+#                                                     +:+ +:+         +:+      #
+#    By: dygouasd <marvin@42.fr>                    +#+  +:+       +#+         #
+#                                                 +#+#+#+#+#+   +#+            #
+#    Created: 2017/07/25 12:42:34 by dygouasd          #+#    #+#              #
+#    Updated: 2017/07/26 19:58:07 by dygouasd         ###   ########.fr        #
+#                                                                              #
+# **************************************************************************** #
+
+NAME = bsq
+
+SRC = ./srcs/ft_read.c \
+	  ./srcs/ft_utility.c \
+	  ./srcs/ft_split_whitespaces.c \
+	  ./srcs/ft_print_words_tables.c \
+	  ./srcs/bsq.c \
+	  ./srcs/errors.c \
+	  ./srcs/ft_atoi.c \
+	  ./srcs/ft_stock_info.c
+
+CFLAGS = -Wall -Wextra -Werror
+
+C_GREEN = "\033[32m"
+C_RED = "\033[31m"
+
+all: $(NAME)
+
+$(NAME):
+	@gcc -o $(NAME) $(CFLAGS) $(SRC) -I./header/
+	@echo $(C_GREEN)"[][][][][][][][][][OK][][][][][][][][][]"
+
+fclean:
+	@rm -rf $(NAME)
+	@echo $(C_RED)"-~-~-~-~-~-~-~-~<DELETE>~-~-~-~-~-~-~-~-"
+
+re: fclean all

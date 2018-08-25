@@ -1,0 +1,7 @@
+
+Credentials cache: API:8A0C52AD-2E86-4482-81FA-FFEB6A67D847
+        Principal: awalsh@42.FR
+
+  Issued                Expires               Principal
+Jul  4 10:29:50 2017  Jul 11 10:29:50 2017  krbtgt/42.FR@42.FR
+Jul  4 10:36:51 2017  Jul 11 10:29:50 2017  host/vgs-fn1.42.fr@42.FR
